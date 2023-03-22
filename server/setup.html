@@ -2,15 +2,79 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/server/style.css" />
     <title>Atlas Setup</title>
   </head>
   <body>
     <header>
-        <h1>Atlas Setup</h1>
+      <h2>Setup Your Personal MongoDB Server</h2>
     </header>
     <main>
-        we will see it in here.
+      <!-- <nav>
+        <ul>
+          <li><a href="#setup">Server Setup</a></li>
+          <li><a href="#connect-shell">Connecting with Mongo Shell</a></li>
+          <li><a href="#connect-compass">Connecting with Compass</a></li>
+          <li><a href="#setup-atlas">Setting Up Atlas</a></li>
+          <li><a href="#connect-atlas-shell">Connecting Atlas with Mongo Shell</a></li>
+          <li><a href="#connect-atlas-compass">Connecting Atlas with Compass</a></li>
+          <li><a href="#connect-atlas-nodejs">Connecting Atlas with NodeJS</a></li>
+        </ul>
+      </nav> -->
+      <p>
+        MongoDB is a popular document-oriented database system that is widely
+        used in web development. If you are new to MongoDB and want to start
+        using it, this guide will help you set up your own MongoDB server.
+      </p>
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>A computer running Windows, macOS, or Linux</li>
+        <li>Administrative access to install software on your computer</li>
+        <li>An Internet Connection (just while Downloading)</li>
+        <li>A web browser</li>
+      </ul>
+      <h3>Step 1. Download and install MongoDB</h3>
+      <p>
+        The first step is to download and install MongoDB. You can download the
+        latest version of MongoDB from the official website
+        <a href="https://www.mongodb.com/try/download/community"
+          >https://www.mongodb.com/</a
+        >.
+      </p>
+      <p>
+        Once you have downloaded the installer follow the steps to start the
+        installer.
+      </p>
+      <ul>
+        <li>Double-click the installation package to start the installer.</li>
+        <li>
+          Follow the on-screen instructions to install MongoDB. Make sure you
+          select the option to install the MongoDB server and the MongoDB
+          Compass tool.
+        </li>
+        <li>
+          Once the installation is complete, you should see a message indicating
+          that MongoDB has been successfully installed.
+        </li>
+      </ul>
+      <h3>Step 2. Configure MongoDB</h3>
+      <p>Once you have installed MongoDB, you need to start the MongoDB server. Here's how to do it:</p>
+		<ol>
+			<li>Open a command prompt or terminal window.</li>
+			<li>Navigate to the MongoDB installation directory.</li>
+			<li>Create a directory to store the MongoDB data files: <code>mkdir data</code>.</li>
+			<li>Start the MongoDB server: <code>mongod --dbpath=data</code>.</li>
+		</ol>
+
+		<p>After running the <code>mongod</code> command, you should see output similar to the following:</p>
+		<code>2022-03-21T13:45:23.312+0000 I CONTROL  [initandlisten] MongoDB starting : pid=12345 port=27017 dbpath=data 64-bit host=your-host-name</code>
+
+		<p>This means that the MongoDB server is running and listening on port 27017.</p>
+        <h3>Conclusion</h3>
+        <p>Your Mongo DB Server is now set and now you would require a program or platform to connect with this server, It could be via mongo Shell, Mongo Compass software, or any other software like Java, Node, Python to access your data.</p>
+        <h3>Connect to MongoDB</h3>
+        <p>Choose a platform you would like to connect it with. </p>
+        
     </main>
   </body>
 </html>

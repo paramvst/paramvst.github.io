@@ -73,6 +73,7 @@ table {
     display: none;
     padding: 20px;
     border: 1px solid #ccc;
+    height: 80vh;
   }
 
   .tabcontent.active {
@@ -118,3 +119,5 @@ table {
   .alert button:hover {
     background-color: #ccc;
   }
+
+  
