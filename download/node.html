@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/server/style.css" />
+    <title>Installing Node JS</title>
+  </head>
+  <body>
+    <main>
+      <p>To install Node JS follow the following steps:</p>
+      <h3>Prerequisites</h3>
+      <p>
+        Before you begin, make sure that you have administrative privileges on
+        your system. Also, ensure that you have a stable internet connection to
+        download the required files.
+      </p>
+      <h3>Installing Node.js on Windows</h3>
+      <ol>
+        <li>
+          <p>
+            Download the Windows installer for Node.js from the official
+            website. You can choose between the Current and LTS (Long-term
+            Support) versions, depending on your requirements.
+          </p>
+        </li>
+        <li>
+          <p>
+            Run the downloaded installer and follow the on-screen instructions
+            to complete the installation process.
+          </p>
+        </li>
+        <li>
+          <p>
+            After the installation is complete, open the command prompt and type
+            <code>node -v</code> to check the version of Node.js installed on
+            your system.
+          </p>
+        </li>
+      </ol>
+      <h3>Installing Node.js on macOS</h3>
+      <ol>
+        <li>
+          <p>Open the Terminal app on your Mac.</p>
+        </li>
+        <li>
+          <p>
+            Install the Homebrew package manager by running the following
+            command:
+          </p>
+        <div><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></div>
+
+        </li>
+        <li>
+          <p>
+            Once Homebrew is installed, run the following command to install
+            Node.js:brew install node
+          </p>
+        </li>
+        <li>
+          <p>
+            After the installation is complete, type <code>node -v</code> to
+            check the version of Node.js installed on your system.
+          </p>
+        </li>
+      </ol>
+      <h3>Installing Node.js on Linux</h3>
+      <p>
+        The installation process for Node.js on Linux can vary depending on the
+        distribution you are using. Here&apos;s how you can install it on
+        Ubuntu:
+      </p>
+      <ol>
+        <li>
+          <p>Open the Terminal app on your Ubuntu system.</p>
+        </li>
+        <li>
+          <p>
+            Run the following commands to add the NodeSource repository and
+            install Node.js:
+            <div>
+              <code> curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash
+                - sudo apt-get install -y nodejs
+              </code>
+            </div>
+          </p>
+        </li>
+        <li>
+          <p>
+            After the installation is complete, type <code>node -v</code> to
+            check the version of Node.js installed on your system.
+          </p>
+        </li>
+      </ol>
+      <h3>Conclusion</h3>
+      <p>
+        In this blog, we covered how to install Node.js on different operating
+        systems. Once you have Node.js installed on your system, you can start
+        building applications using the many frameworks and libraries available
+        in the Node.js ecosystem.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,16 +1,123 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/server/style.css" />
     <title>Connect MongoSh with Atlas</title>
   </head>
   <body>
     <header>
-        <h2>Connect MongoSh with Atlas</h2>
+      <h2>Connect MongoSh with Atlas</h2>
     </header>
     <main>
-        we will see it in here.
+      <h3>Prerequisites:</h3>
+      <p>Before you begin, you will need to have the following:</p>
+      <ul>
+        <li>A MongoDB server set up and running.</li>
+        <li>
+          The MongoDB command-line interface, or Mongo shell, installed on your
+          computer. You can download it from the official MongoDB website.
+        </li>
+      </ul>
+      <div class="button-container">
+        <!-- Buttons used to open and close the dropdown content -->
+        <button id="toggle-btn-shell" class="dropdown-button">Don't have mongo Shell installed? &#9660</button>
+      </div>
+      
+        <div id="dropdown-content-container"></div>
+        
+
+      <h3>Step 1: Open the Command Line</h3>
+      <p>
+        To connect to your MongoDB server using the Mongo shell, you will need
+        to open a command line interface on your computer. This can be done by
+        opening the Command Prompt on Windows, Terminal on macOS, or your
+        preferred command-line interface on Linux.
+      </p>
+
+      <h3>Step 2: Connect to the MongoDB Server</h3>
+      <p>
+        Once you have your command line open, you can connect to your MongoDB
+        server by running the following command:
+      </p>
+
+      <div><code>mongo </code></div>
+
+      <p>
+        This will start the Mongo shell and connect to the default MongoDB
+        server running on your local machine.
+      </p>
+      <p>
+        If you have set up your MongoDB server on a remote machine or with a
+        different port or username/password, you can connect to it using the
+        following command:
+      </p>
+
+      <div>
+        <code
+        >mongo --host &lt;host_name&gt;:&lt;port_number&gt; --username
+          &lt;username&gt; --password &lt;password&gt; --authenticationDatabase
+          &lt;database_name&gt;
+        </code>
+      </div>
+      
+      <p>
+        Replace <code>&lt;host_name&gt;</code> with the name or IP address of
+        the machine where the MongoDB server is running,
+        <code>&lt;port_number&gt;</code> with the port number that the MongoDB
+        server is listening on, <code>&lt;username&gt;</code> and
+        <code>&lt;password&gt;</code> with your MongoDB username and password,
+        and <code>&lt;database_name&gt;</code> with the name of the
+        authentication database.
+      </p>
+      
+      <h3>Step 3: Switch to a Database</h3>
+      <p>
+        Once you are connected to your MongoDB server, you can switch to a
+        specific database using the following command:
+      </p>
+
+      <div><code>use &lt;database_name&gt; </code></div>
+      
+      <p>
+        Replace <code>&lt;database_name&gt;</code> with the name of the database
+        you want to connect to.
+      </p>
+
+      <h3>Step 4: Run MongoDB Commands</h3>
+      <p>
+        Now that you are connected to a database, you can run MongoDB commands
+        using the Mongo shell. For example, to show all the collections in the
+        current database, you can run the following command:
+      </p>
+      
+      <div><code>show collections </code></div>
+
+      <p>To create a new collection, you can run the following command:</p>
+
+      <div>
+        <code>db.createCollection(&quot;&lt;collection_name&gt;&quot;) </code>
+      </div>
+
+      <p>
+        Replace <code>&lt;collection_name&gt;</code> with the name of the
+        collection you want to create.
+      </p>
+
+      <h3>Step 5: Exit the Mongo Shell</h3>
+      <p>To exit the Mongo shell, you can run the following command:</p>
+
+      <div><code>exit </code></div>
+
+      <p>
+        This will disconnect from the MongoDB server and close the Mongo shell.
+      </p>
+      <p>
+        That&apos;s it! You now know how to connect the Mongo shell with your
+        MongoDB server. With this knowledge, you can start exploring and working
+        with your MongoDB databases using the command line.
+      </p>
     </main>
+    <script src="../download/dropdown.js"></script>
   </body>
 </html>
