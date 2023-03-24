@@ -1,27 +1,77 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.alert {
+  background-color: #ffc107;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.alert-message {
+  font-size: 24px;
+}
+
+.tab {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tab button {
+  background-color: #6b0f96;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tab button:hover {
+  background-color: #58636e;
+}
+
 table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-  }
+  margin-top: 50px;
+  width: 80%;
+  border-collapse: collapse;
+  border: 2px solid #007bff;
+}
 
-  th,
-  td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    font-weight: bold;
-  }
+th,
+td {
+  border: 1px solid #007bff;
+  padding: 10px;
+}
 
-  thead {
-    background-color: #f2f2f2;
-    font-size: large;
-    font-weight: bold;
-  }
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 210%;
+}
 
-  th {
-    font-size: larger;
-  }
+.tabcontent {
+  display: none;
+}
 
   @media only screen and (max-width: 600px) {
     th,
@@ -118,4 +168,27 @@ table {
 
   .alert button:hover {
     background-color: #ccc;
+  }
+
+  /* this is the dropdown that will be used by servers */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Styling for the content inside the dropdown */
+  .dropdown-content p {
+    margin: 0;
+    padding: 5px 0;
   }
