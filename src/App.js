@@ -1,41 +1,23 @@
 import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-  Heading,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { Routes, Route } from 'react-router-dom';
+import MongoDB from './pages/blogs/MongoDB';
+import Achivements from './pages/portfolio/Achivements';
+import Works from './pages/portfolio/Works';
+import Blogs from './pages/_main/Blogs';
+import Portfolio from './pages/_main/Portfolio';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Heading>Param's Portfolio</Heading>
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+    <>
+    <Routes>
+      <Route path="/" element={<Portfolio />} />
+      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/blogs/blog/mongoDB" element={<MongoDB />} />
+      <Route path="/achivements" element={<Achivements />} />
+      <Route path="/works" element={<Works />} />
+      <Route path="*" element={<h1>Buddy..  No such Page exists. Sorry for that</h1>} />
+    </Routes>
+    </>
   );
 }
 
