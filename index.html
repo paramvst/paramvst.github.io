@@ -4,30 +4,25 @@
     <meta charset="UTF-8" />
     <title>Implementing MongoDB</title>
     <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
   <body>
-    <h1>Time to Implement MongoDB</h1>
-    <!-- Disclamer or alert -->
-    <div class="alert">
-      <span class="alert-message"
-        >If you are new to MongoDB and want to learn how to start reading the
-        MongoDB, please start reading the blog as it is, but if you want to
-        learn or want to refer to a specific functionality, please click one of
-        the below buttons and your wanted thing would popup.</span
-      >
-    </div>
-
+    <header>
+      <h1>Time to Implement MongoDB</h1>
+    </header>
+    <main>
+      
     <!-- Tab links -->
-    <div class="tab">
+    <div class="tab" >
       <h3>Choose the topic you want to learn today.</h3>
-
+      
       <button
-        style="width: 80%; color:  orange; font-size: 250%; font-weight: 700;"
-        class="tablinks"
-        onclick="openTab(event, 'allContent')">
-        New to MongoDB !! Let's start from scratch !</button
-      ><br /><br />
-      <table>
+      style="width: 80%; color:  orange; font-size: 250%; font-weight: 700;"
+      class="tablinks"
+      onclick="openTab(event, 'allContent')">
+      New to MongoDB !! Let's start from scratch !</button
+      >
+      <table >
         <thead>
           <tr>
             <th>Mongo Personal Server</th>
@@ -41,83 +36,84 @@
                 Setup Your Personal MongoDB Server
               </button>
               <br /><br /><button
-                class="tablinks"
-                onclick="openTab(event, 'ConnectMongoShell')">
-                Connect Your Server with Mongo Shell
+              class="tablinks"
+              onclick="openTab(event, 'ConnectMongoShell')">
+              Connect Your Server with Mongo Shell
+            </button>
+            <br /><button
+            class="tablinks"
+            onclick="openTab(event, 'ConnectCompass')">
+            Connect Your Server with Compass
               </button>
               <br /><button
-                class="tablinks"
-                onclick="openTab(event, 'ConnectCompass')">
-                Connect Your Server with Compass
-              </button>
-              <br /><button
-                class="tablinks"
-                onclick="openTab(event, 'connectNode')">
-                Connect Your Server with NodeJS
-              </button>
-            </td>
-            <td>
-              <button class="tablinks" onclick="openTab(event, 'SetupAtlas')">
-                Setup Your Atlas Account
-              </button>
-              <br /><br /><button
-                class="tablinks"
-                onclick="openTab(event, 'ConnectAtlasShell')">
-                Connect Atlas Account with Mongo Shell
-              </button>
-              <br /><button
-                class="tablinks"
-                onclick="openTab(event, 'ConnectAtlasCompass')">
-                Connect Atlas Account with Compass
-              </button>
-              <br /><button
-                class="tablinks"
-                onclick="openTab(event, 'ConnectAtlasNode')">
-                Connect Atlas Account with NodeJS
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+              class="tablinks"
+              onclick="openTab(event, 'connectNode')">
+              Connect Your Server with NodeJS
+            </button>
+          </td>
+          <td>
+            <button class="tablinks" onclick="openTab(event, 'SetupAtlas')">
+              Setup Your Atlas Account
+            </button>
+            <br /><br /><button
+            class="tablinks"
+            onclick="openTab(event, 'ConnectAtlasShell')">
+            Connect Atlas Account with Mongo Shell
+          </button>
+          <br /><button
+          class="tablinks"
+          onclick="openTab(event, 'ConnectAtlasCompass')">
+          Connect Atlas Account with Compass
+        </button>
+        <br /><button
+        class="tablinks"
+        onclick="openTab(event, 'ConnectAtlasNode')">
+        Connect Atlas Account with NodeJS
+      </button>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
 
-    <!-- Tab content -->
-    <div id="allContent" class="tabcontent">
-      <iframe src="./main.html" frameborder="0" width="100%" height="100%"></iframe>
+<!-- Tab content -->
+<div id="allContent" class="tabcontent">
+  <iframe src="./main.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="SetupServer" class="tabcontent">
       <iframe src="./server/setup.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="ConnectMongoShell" class="tabcontent">
       <iframe src="./server/connect_MongoSh.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="ConnectCompass" class="tabcontent">
       <iframe src="./server/connect_Compass.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="connectNode" class="tabcontent">
       <iframe src="./server/connect_Node.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="SetupAtlas" class="tabcontent">
       <iframe src="./atlas/setup.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="ConnectAtlasShell" class="tabcontent">
       <iframe src="./atlas/connect_MongoSh.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="ConnectAtlasCompass" class="tabcontent">
       <iframe src="./atlas/connect_Compass.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
+    
     <div id="ConnectAtlasNode" class="tabcontent">
       <iframe src="./atlas/connect_Node.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>
-
- <script src="index.js"></script>
+    </main>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
   </body>
-</html>
+  </html>
