@@ -1,12 +1,30 @@
 {
   "files": {
-    "main.js": "/static/js/main.2b6c6dfe.js",
+    "main.js": "/static/js/main.c8de8938.js",
+    "static/media/serverInstallEnvironmentSearchAtStart.png": "/static/media/serverInstallEnvironmentSearchAtStart.3b52509303f6c460b448.png",
+    "static/media/workingServer.png": "/static/media/workingServer.de92068be485f7dbb90b.png",
+    "static/media/connectedShell.png": "/static/media/connectedShell.8732f99c89468e500b83.png",
+    "static/media/shellEx2.png": "/static/media/shellEx2.cdee6c140f5d5d912280.png",
+    "static/media/shellEx1.png": "/static/media/shellEx1.db4601200fea8ce3ce3e.png",
+    "static/media/shellEx3.png": "/static/media/shellEx3.743fba4b0f5ddca74e81.png",
+    "static/media/shellEx4.png": "/static/media/shellEx4.ec7197d2f9aa06a0cc15.png",
+    "static/media/serverStartdataError.png": "/static/media/serverStartdataError.d52f70ea690e154c9c79.png",
+    "static/media/InstallingMongoShell.png": "/static/media/InstallingMongoShell.b7bc3469d5ce6d46fc50.png",
+    "static/media/serverInstallationInstructions.png": "/static/media/serverInstallationInstructions.f668374aad1a1103d494.png",
+    "static/media/mongo-server-download.png": "/static/media/mongo-server-download.1b1157c6cf982b71b21c.png",
     "static/media/2.png": "/static/media/2.e2e1bbbfa124d75bf174.png",
     "static/media/1.png": "/static/media/1.20b1af1a785ec3bb6e81.png",
+    "static/media/serveraddPathEnvVar.png": "/static/media/serveraddPathEnvVar.d7a3a1675641f4b76591.png",
+    "static/media/serverCompleteInstallation.png": "/static/media/serverCompleteInstallation.1ce20090a2ed64ed1beb.png",
+    "static/media/serverDownloadConfiguration.png": "/static/media/serverDownloadConfiguration.71133cc0fc74b75ea3af.png",
+    "static/media/serverEnvSetuplocatePath.png": "/static/media/serverEnvSetuplocatePath.4d8d623d568a9d99fa8b.png",
+    "static/media/serverInstallationcheckButton.png": "/static/media/serverInstallationcheckButton.1c6b1bb316b933da0587.png",
+    "static/media/serverInstallButton.png": "/static/media/serverInstallButton.fe3aefbad93065163a13.png",
+    "static/media/serverEnvVarSetup.png": "/static/media/serverEnvVarSetup.cefaa4c8cc69916bf4b4.png",
     "index.html": "/index.html",
-    "main.2b6c6dfe.js.map": "/static/js/main.2b6c6dfe.js.map"
+    "main.c8de8938.js.map": "/static/js/main.c8de8938.js.map"
   },
   "entrypoints": [
-    "static/js/main.2b6c6dfe.js"
+    "static/js/main.c8de8938.js"
   ]
 }
