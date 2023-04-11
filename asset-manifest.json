@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.c8de8938.js",
+    "main.js": "/static/js/main.6871b7c9.js",
     "static/media/serverInstallEnvironmentSearchAtStart.png": "/static/media/serverInstallEnvironmentSearchAtStart.3b52509303f6c460b448.png",
     "static/media/workingServer.png": "/static/media/workingServer.de92068be485f7dbb90b.png",
     "static/media/connectedShell.png": "/static/media/connectedShell.8732f99c89468e500b83.png",
@@ -22,9 +22,9 @@
     "static/media/serverInstallButton.png": "/static/media/serverInstallButton.fe3aefbad93065163a13.png",
     "static/media/serverEnvVarSetup.png": "/static/media/serverEnvVarSetup.cefaa4c8cc69916bf4b4.png",
     "index.html": "/index.html",
-    "main.c8de8938.js.map": "/static/js/main.c8de8938.js.map"
+    "main.6871b7c9.js.map": "/static/js/main.6871b7c9.js.map"
   },
   "entrypoints": [
-    "static/js/main.c8de8938.js"
+    "static/js/main.6871b7c9.js"
   ]
 }
